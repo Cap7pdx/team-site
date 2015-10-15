@@ -1,0 +1,18 @@
+<!-- Cap7 Logout Page
+     Copyright © 2015 Jonathan Hasbun -->
+
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <?php
+            # Remove all session variables.
+            session_unset();
+
+            # Destroy the session.
+            session_destroy();
+        ?>
+    </body>
+</html>
